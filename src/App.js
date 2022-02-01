@@ -1,5 +1,7 @@
 import './App.css';
 import {useEffect, useState} from "react";
+import Navbar from "./componentes/Navbar";
+import Footer from "./componentes/Footer";
 
 function App() {
 
@@ -31,6 +33,7 @@ function App() {
 
     return (
         <div className="App">
+            <Navbar />
             <div className="newExperienceForm">
                 <input onChange={e => setNewExperience(e.target.value)} type="text"/>
                 <button onClick={() => addExperience(newExperience)}>Add experience</button>
@@ -39,6 +42,7 @@ function App() {
             <ul>
                 {experiences.map(experience => <li>{experience.name}</li>)}
             </ul>
+            <Footer />
         </div>
     );
 }
