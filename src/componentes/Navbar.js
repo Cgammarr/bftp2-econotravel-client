@@ -1,10 +1,21 @@
-import React from "react";
+import React from "react"
+import  styled  from 'styled-components'
 
 function Navbar() {
+
     return (
-        <h1>Esta es la navbar</h1>
+        <>
+
+            <NavContainer>
+                <h2>Econotravel</h2>
+            </NavContainer>
+
+        </>
     )
 }
 
 
 export default Navbar;
+
+const NavContainer = styled.nav`
+    `
