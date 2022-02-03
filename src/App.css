@@ -9,7 +9,8 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("https://www.wallpapertip.com/wmimgs/14-145317_forest-high-resolution-nature.jpg")
+  background-image: url("https://www.wallpapertip.com/wmimgs/14-145317_forest-high-resolution-nature.jpg");
+text-align: center;
 }
 
 
@@ -41,4 +42,8 @@ h1 {
   color: #f5e1b6;
 
 
+}
+
+.logoimage{
+  width: 100px;
 }

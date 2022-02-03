@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
+import logo from './assets/Logo.png'
 
 function Navbar() {
 
@@ -12,15 +13,13 @@ function Navbar() {
     return (
         <>
             <NavContainer>
+                <img src={logo} className="logoimage"/>
                 <h2>Vive<span> Econotravel</span></h2>
-
-
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     <a onClick={handleClick} href="#h">Inicio</a>
                     <a onClick={handleClick} href="#h">Experiencias</a>
                     <a onClick={handleClick} href="#h">Sobre Nosotras</a>
                     <a onClick={handleClick} href="#h">Reserva ya</a>
-
                 </div>
                 <div className='burguer'>
                     <BurguerButton clicked={clicked} handleClick={handleClick}/>
