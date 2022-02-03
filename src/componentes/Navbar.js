@@ -12,7 +12,9 @@ function Navbar() {
     return (
         <>
             <NavContainer>
-                <h2>Experiencias<span>Econotravel</span></h2>
+                <h2>Vive<span> Econotravel</span></h2>
+
+
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     <a onClick={handleClick} href="#h">Inicio</a>
                     <a onClick={handleClick} href="#h">Experiencias</a>
@@ -33,7 +35,7 @@ export default Navbar
 
 const NavContainer = styled.nav`
   h2{
-    color: #efb810;
+    color: #bf930d;
     font-weight: 400;
     span{
     font-weight: bold;
@@ -71,7 +73,7 @@ background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%,
       margin: 0;
       a{
         font-size: 1rem;
-        color: white;
+        color: #f5e1b6;
         display: inline;
       }
       display: block;
@@ -83,14 +85,14 @@ background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%,
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
+    top: 45%;
     left: 0;
     right: 0;
     text-align: center;
     a{
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-top: 1rem;
-      color: white;
+      color: #efb810;
     }
   }
   .burguer{
@@ -101,7 +103,12 @@ background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%,
 `
 
 const BgDiv = styled.div`
-  background-color: #222;
+
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,5,1,1) 100%);
+    background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%, #37605d 37.5%, #1f5959 50%, #005156 62.5%, #004a54 75%, #004453 87.5%, #003d52 100%);
+  
+  
   position: absolute;
   top: -1000px;
   left: -1000px;
