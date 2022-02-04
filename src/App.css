@@ -2,15 +2,18 @@
   text-align: -moz-center;
   height: 1250px;
   width: auto;
-
 }
 body {
   padding: 0;
   margin: 0;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+/*background-size: 100% 100%;*/
+height: auto;
   background-image: url("https://www.wallpapertip.com/wmimgs/14-145317_forest-high-resolution-nature.jpg");
-text-align: center;
+  background-size: cover;
+/*background-image: linear-gradient(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%);/
+text-align: center;*/
+  text-align: center;
 }
 
 
@@ -32,18 +35,27 @@ code {
 h3{
   font-size: 60px;
   font-family: Nickainley;
-  color: #f5e1b6;
-
+  color: #ffd136;
 
 }
 h1 {
   font-size: 80px;
   font-family: Bodoni FLF;
-  color: #f5e1b6;
+  color: #c39717;
 
 
 }
 
-.logoimage{
+.logoimage {
   width: 100px;
+
+}
+.logoimage:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);
+}
+
+.marca {
+  font-family: "Nickainley";
+  font-weight: bold;
+  display: flex;
+  width: 35px;
 }

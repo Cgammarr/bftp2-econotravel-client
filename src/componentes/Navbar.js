@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+ import React, {useState} from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
 import logo from './assets/Logo.png'
@@ -13,11 +13,12 @@ function Navbar() {
     return (
         <>
             <NavContainer>
-                <img src={logo} className="logoimage"/>
-                <h2>Vive<span> Econotravel</span></h2>
+                <div className='marca'>
+                    <img src={logo} className="logoimage"/>
+                    <h2>Vive la<span> Naturaleza</span></h2>
+                </div>
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     <a onClick={handleClick} href="#h">Inicio</a>
-                    <a onClick={handleClick} href="#h">Experiencias</a>
                     <a onClick={handleClick} href="#h">Sobre Nosotras</a>
                     <a onClick={handleClick} href="#h">Reserva ya</a>
                 </div>
@@ -71,9 +72,12 @@ background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%,
       position: initial;
       margin: 0;
       a{
-        font-size: 1rem;
-        color: #f5e1b6;
+        font-size: 1.5rem;
+        color: #997619;
         display: inline;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-family: 'Roboto', sans-serif;
+   
       }
       display: block;
     }
@@ -84,7 +88,7 @@ background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%,
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 45%;
+    top: 50%;
     left: 0;
     right: 0;
     text-align: center;
@@ -122,5 +126,7 @@ const BgDiv = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-  }
-`
+    }
+    
+    `
+
