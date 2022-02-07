@@ -2,6 +2,7 @@
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
 import logo from './assets/Logo.png'
+ import {Link} from "react-router-dom";
 
 function Navbar() {
 
@@ -18,9 +19,9 @@ function Navbar() {
                     <h2>Vive la<span> Naturaleza</span></h2>
                 </div>
                 <div className={`links ${clicked ? 'active' : ''}`}>
-                    <a onClick={handleClick} href="#h">Inicio</a>
-                    <a onClick={handleClick} href="#h">Sobre Nosotras</a>
-                    <a onClick={handleClick} href="#h">Reserva ya</a>
+                    <Link  to="/">Inicio</Link>
+                    <Link  to="/sobrenosotras">Sobre Nosotras</Link>
+                    <Link  to="/reservaya">Reserva ya</Link>
                 </div>
                 <div className='burguer'>
                     <BurguerButton clicked={clicked} handleClick={handleClick}/>

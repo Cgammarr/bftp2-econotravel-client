@@ -2,7 +2,12 @@ import './App.css';
 import {useEffect, useState} from "react";
 import Navbar from "./componentes/Navbar";
 import Footer from "./componentes/Footer";
-import Body from "./componentes/Body";
+import Home from "./componentes/Home";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import ReservaYa from "./componentes/ReservaYa";
+import NewExperiences from "./componentes/NewExperiences";
+import Experiencies from "./componentes/Experiencies";
+import SobreNosotras from "./componentes/SobreNosotras";
 
 function App() {
 
@@ -32,12 +37,20 @@ function App() {
     }
 
     return (
-        <div className="App">
+        <BrowserRouter>
             <Navbar />
-            <Body />
             <Footer />
-        </div>
+            <Routes>
+                <Route path="/" element={< Experiencies/>} />
+                <Route path="/sobrenosotras" element={<SobreNosotras />} />
+                <Route path="/reservaya" element={<ReservaYa />} />
+                <Route path="/newexperiencies" element={<NewExperiences />} />
+                <Route path="/experiencies" element={<Experiencies />} />
+            </Routes>
+
+        </BrowserRouter>
     );
 }
 
 export default App;
+

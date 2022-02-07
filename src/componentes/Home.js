@@ -1,8 +1,8 @@
 import React from "react";
 
-function Body() {
+function Home() {
     return (
-        <div className="body">
+        <div className="home">
             <h3>Naturaleza</h3>
             <h1>Econotravel</h1>
         </div>
@@ -10,4 +10,4 @@ function Body() {
 }
 
 
-export default Body;
+export default Home;
