@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import Navbar from "./componentes/Navbar";
 import Footer from "./componentes/Footer";
 import Home from "./componentes/Home";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import ReservaYa from "./componentes/ReservaYa";
 import NewExperiences from "./componentes/NewExperiences";
 import Experiencies from "./componentes/Experiencies";
@@ -46,6 +46,7 @@ function App() {
                 <Route path="/reservaya" element={<ReservaYa />} />
                 <Route path="/newexperiencies" element={<NewExperiences />} />
                 <Route path="/experiencies" element={<Experiencies />} />
+                <Route path='*' element={<Navigate reaplace to="/" />} />
             </Routes>
 
         </BrowserRouter>
