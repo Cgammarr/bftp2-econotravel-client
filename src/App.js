@@ -41,7 +41,7 @@ function App() {
             <Navbar />
             <Footer />
             <Routes>
-                <Route path="/" element={< Experiencies/>} />
+                <Route path="/" element={< Home/>} />
                 <Route path="/sobrenosotras" element={<SobreNosotras />} />
                 <Route path="/reservaya" element={<ReservaYa />} />
                 <Route path="/newexperiencies" element={<NewExperiences />} />
