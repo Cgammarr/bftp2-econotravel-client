@@ -5,6 +5,7 @@ function Card({experience}) {
         <div className="experience-card">
             <p>{experience.name}</p>
             <p>{experience.price}</p>
+
         </div>
     )
 }
