@@ -1,6 +1,6 @@
 import React from "react";
 
-function NewExperiencies() {
+function NewExperiences(setNewExperience, experiences) {
     return (
 
         <div className="newExperienceForm">
@@ -16,7 +16,7 @@ function NewExperiencies() {
 }
 
 
-export default NewExperiencies;
+export default NewExperiences;
 
 
 

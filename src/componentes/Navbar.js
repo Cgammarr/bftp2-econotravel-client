@@ -22,6 +22,7 @@ function Navbar() {
                     <Link  to="/">Inicio</Link>
                     <Link  to="/sobrenosotras">Sobre Nosotras</Link>
                     <Link  to="/reservaya">Reserva ya</Link>
+                    <Link to="/experiences">Experiencias</Link>
                 </div>
                 <div className='burguer'>
                     <BurguerButton clicked={clicked} handleClick={handleClick}/>

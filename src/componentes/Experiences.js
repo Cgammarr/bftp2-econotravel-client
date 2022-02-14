@@ -1,14 +1,16 @@
 import React from "react";
+import Card from "./Card";
 
-function Experiencies() {
+function Experiences({experiences}) {
     return (
         <div className="experiencies">
             <h3>aqui ira el catalogo de experiencias</h3>
-            <h1>Econotravel</h1>
+
+            {experiences.map ( e => <Card experience={e} /> )}
 
         </div>
     )
 }
 
 
-export default Experiencies;
+export default Experiences;
