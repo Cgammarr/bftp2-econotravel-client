@@ -1,12 +1,12 @@
 import './App.css';
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import Navbar from "./componentes/Navbar";
 import Footer from "./componentes/Footer";
 import Home from "./componentes/Home";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import ReservaYa from "./componentes/ReservaYa";
 import NewExperiences from "./componentes/NewExperiences";
-import Experiencies from "./componentes/Experiencies";
+import Experiences from "./componentes/Experiences";
 import SobreNosotras from "./componentes/SobreNosotras";
 
 function App() {
@@ -36,18 +36,24 @@ function App() {
 
     }
 
+
+
     return (
+
+
+
         <BrowserRouter>
             <Navbar />
-            <Footer />
+
             <Routes>
-                <Route path="/" element={< Home/>} />
+                <Route path="/" element={< Home/>} experiences={experiences}/>
                 <Route path="/sobrenosotras" element={<SobreNosotras />} />
                 <Route path="/reservaya" element={<ReservaYa />} />
-                <Route path="/newexperiencies" element={<NewExperiences />} />
-                <Route path="/experiencies" element={<Experiencies />} />
+                <Route path="/newexperiences" element={<NewExperiences/>} />
+                <Route path="/experiences" element={<Experiences experiences={experiences} />} />
                 <Route path='*' element={<Navigate reaplace to="/" />} />
             </Routes>
+            <Footer />
 
         </BrowserRouter>
     );
