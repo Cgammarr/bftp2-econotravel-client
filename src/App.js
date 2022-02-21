@@ -3,7 +3,7 @@ import React, {useEffect, useState} from "react";
 import Navbar from "./componentes/Navbar";
 import Footer from "./componentes/Footer";
 import Home from "./componentes/Home";
-import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ReservaYa from "./componentes/ReservaYa";
 import NewExperiences from "./componentes/NewExperiences";
 import Experiences from "./componentes/Experiences";
@@ -44,9 +44,8 @@ function App() {
 
         <BrowserRouter>
             <Navbar />
-
             <Routes>
-                <Route path="/" element={< Home/>} experiences={experiences}/>
+                <Route path="/" element={< Home/>} />
                 <Route path="/sobrenosotras" element={<SobreNosotras />} />
                 <Route path="/reservaya" element={<ReservaYa />} />
                 <Route path="/newexperiences" element={<NewExperiences/>} />
