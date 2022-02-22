@@ -25,16 +25,7 @@ function App() {
         }
     }, [requiresUpdate])
 
-    const addExperience = (experienceName) => {
-        fetch("http://localhost:8080/api/experiences",
-            {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({name: experienceName})
-            }
-        ).then(_ => setRequiresUpdate(true))
 
-    }
 
 
 
