@@ -1,3 +1,31 @@
+
 .contenido{
     background-color: #bf930d;
 }
+
+.contenido {
+    background-color: greenyellow;
+
+
+}
+
+.contenedor-img{
+    width: 300px;
+    height: 300px;
+}
+
+.experienceImg{
+    max-width: 150px;
+    max-height: 200px;
+}
+
+.experience-card{
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+.experienceImg {
+    max-width: 450px;
+
+}
+
