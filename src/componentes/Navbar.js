@@ -43,7 +43,7 @@ const NavContainer = styled.nav`
     font-weight: bold;
     }
   }
-  padding: .4rem;
+  padding: .3rem;
   background: rgb(34,193,195);
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,5,1,1) 100%);
 background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%, #37605d 37.5%, #1f5959 50%, #005156 62.5%, #004a54 75%, #004453 87.5%, #003d52 100%);

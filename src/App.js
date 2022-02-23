@@ -9,10 +9,10 @@ import NewExperienceForm from "./componentes/NewExperienceForm";
 import Experiences from "./componentes/Experiences";
 import SobreNosotras from "./componentes/SobreNosotras";
 
+
 function App() {
 
     const [experiences, setExperiences] = useState([]);
-    const [newExperience, setNewExperience] = useState("");
     const [requiresUpdate, setRequiresUpdate] = useState(true);
 
 

@@ -1,0 +1,102 @@
+
+.wrap{
+    width: 1100px;
+    margin: 50px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.tarjeta-wrap{
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.tarjeta{
+    width: 450px;
+    height: 350px;
+
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.adelante{
+    width: 100%;
+}
+
+.atras{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+
+    padding: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    text-align: center;
+    color: #fff;
+    font-family: "open sans";
+    background: darkolivegreen;
+}
+
+.tarjeta-wrap:hover .tarjeta{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card1{
+    background-image: url(https://viajes.nationalgeographic.com.es/medio/2019/05/07/istock-534157867_22a0247f_2000x1330.jpg);
+    background-size: cover;
+}
+
+.card2{
+    background-image: url(https://acquariomaritime.com/wp-content/uploads/2017/04/barcelona.jpg);
+    background-size: cover;
+}
+
+.card3{
+    background-image: url(https://hotelarclarambla.com/wp-content/uploads/2017/04/hotel-arc-la-rambla-park-guell.jpg);
+    background-size: cover;
+}
+.card4{
+    background-image: url(https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/55/1a.jpg);
+    background-size: cover;
+}
+.card5{
+    background-image: url(https://offloadmedia.feverup.com/barcelonasecreta.com/wp-content/uploads/2020/11/10060711/montseny.jpg);
+    background-size: cover;
+}
+.card6{
+    background-image: url(http://guiadebcn.com/wp-content/uploads/2018/04/museo-diseno-barcelona.jpg);
+    background-size: cover;
