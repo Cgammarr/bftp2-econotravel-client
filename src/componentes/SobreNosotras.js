@@ -1,4 +1,6 @@
 import React from "react";
+import './SobreNosotras.css';
+
 
 function SobreNosotras() {
     return (
