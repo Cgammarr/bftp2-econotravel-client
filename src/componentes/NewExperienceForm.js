@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Form from 'react-bootstrap/Form';
 
 
-function NewExperienceForm(setNewExperience, experiences) {
+function NewExperienceForm() {
     const [newExperience, setNewExperience] = useState("");
+    const [requiresUpdate, setRequiresUpdate] = useState(true);
+
     const addExperience = (experienceName) => {
         fetch("http://localhost:8080/api/experiences",
             {

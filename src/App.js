@@ -1,4 +1,4 @@
-/*import './App.css';
+import './App.css';
 import React, {useEffect, useState} from "react";
 import Navbar from "./componentes/Navbar";
 import Footer from "./componentes/Footer";
@@ -51,5 +51,5 @@ function App() {
     );
 }
 
-export default App;*/
+export default App;
 
