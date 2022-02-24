@@ -1,4 +1,4 @@
-import React from "react";
+npimport React from "react";
 
 import './Card.css';
 import {useEffect, useState} from "react";
@@ -8,7 +8,7 @@ import "./Card.css";
 function Card({experience}) {
     const [experiences, setExperiences] = useState([]);
     const [requiresUpdate, setRequiresUpdate] = useState(true);
-
+n
 
     useEffect(() => {
         if (requiresUpdate) {
