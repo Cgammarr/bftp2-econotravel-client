@@ -30,7 +30,6 @@ function Card({experience}) {
 
 
     return (
-
         <div className="contenido">
 
             <div className="experience-card">
@@ -57,6 +56,8 @@ function Card({experience}) {
                 </table>
             </div>
         </div>
+
+
 
     )
 }

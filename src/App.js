@@ -9,10 +9,10 @@ import NewExperienceForm from "./componentes/NewExperienceForm";
 import Experiences from "./componentes/Experiences";
 import SobreNosotras from "./componentes/SobreNosotras";
 
+
 function App() {
 
     const [experiences, setExperiences] = useState([]);
-    const [newExperience, setNewExperience] = useState("");
     const [requiresUpdate, setRequiresUpdate] = useState(true);
 
 
@@ -25,16 +25,7 @@ function App() {
         }
     }, [requiresUpdate])
 
-    const addExperience = (experienceName) => {
-        fetch("http://localhost:8080/api/experiences",
-            {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({name: experienceName})
-            }
-        ).then(_ => setRequiresUpdate(true))
 
-    }
 
 
 

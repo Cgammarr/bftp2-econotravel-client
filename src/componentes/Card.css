@@ -1,11 +1,5 @@
 
-.contenido{
-    background-color: #bf930d;
-}
-
 .contenido {
-    background-color: greenyellow;
-
 
 }
 
@@ -22,10 +16,10 @@
 .experience-card{
     background-color: antiquewhite;
     border-radius: 15px;
+
 }
 
 .experienceImg {
     max-width: 450px;
 
 }
-
