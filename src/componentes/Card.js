@@ -1,8 +1,8 @@
 import React from "react";
+import {useEffect, useState} from "react";
+
 
 import './Card.css';
-import {useEffect, useState} from "react";
-import "./Card.css";
 
 
 function Card({experience}) {
@@ -30,34 +30,39 @@ function Card({experience}) {
 
 
     return (
-        <div className="contenido">
+        <div className="card-page">
+        <div className="card-container">
+            <div className="card">
+                <div className="card__header">
+                    <img className="card__image" src={experience.image} alt="card__image" width="600"/>
+                </div>
 
-            <div className="experience-card">
-                <div className="contenedor-img"><img className="experienceImg" src={experience.image} alt=""/></div>
-                <p>{experience.name}</p>
-                <p>{experience.price}</p>
-                <p>{experience.duration}</p>
-                <p>{experience.accessibility}</p>
-                <p>{experience.tags}</p>
-                <table>
-                    <tbody className="experience-table">
-                    <tr className="experienceBtn">
-                        <td>
-                            <a href="#">Editar</a>
-                        </td>
-                        <td>
-                            <a onClick={() => deleteExperience(experience.id)}>Borrar</a>
-                        </td>
+                <div className="card__body">
 
-                    </tr>
+                    <p>{experience.name}</p>
+                    <div className="small-info">
+                    <p>Precio: {experience.price}€</p><p>Duración: {experience.duration}h</p>
+                    </div>
+                    <small>{experience.accessibility}</small>
+                </div>
 
-                    </tbody>
 
-                </table>
+                <div className="card__footer">
+                    <div className="user">
+                        <div className="user__info">
+                            <small>{experience.tags}</small>
+
+                            <div className="experienceBtn">
+                                <span className="tag tag-blue" href="#">Editar</span>
+                                <span className="tag tag-red" href="#" onClick={() => deleteExperience(experience.id)}>Borrar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-
-
 
     )
 }

@@ -1,0 +1,8 @@
+body{
+    background-color: white;
+    max-weight: 300px;
+}
+.experiences{
+    display: flex;
+    justify-content: space-between;
+}

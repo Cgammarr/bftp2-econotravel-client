@@ -1,19 +1,20 @@
 import React from "react";
 import Card from "./Card";
 import {Link} from "react-router-dom";
+import "./Experiences.css";
 
 
 
 function Experiences({experiences}) {
     return (
 
-        <div className="experiencies">
+<div className="experiences">
+    {experiences.map ( e => <Card experience={e} /> )}
+        {/*
+        <div className="newExperiences">
             <Link to="/newexperiences">Añadir Experiencias </Link>
-
-            {experiences.map ( e => <Card experience={e} /> )}
-            <Link to="/newexperiences">Añadir Experiencias </Link>
-        </div>
-
+        </div>*/}
+</div>
 
     )
 

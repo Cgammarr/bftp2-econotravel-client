@@ -12,7 +12,7 @@ import SobreNosotras from "./componentes/SobreNosotras";
 function App() {
 
     const [experiences, setExperiences] = useState([]);
-    const [newExperience, setNewExperience] = useState("");
+
     const [requiresUpdate, setRequiresUpdate] = useState(true);
 
 

@@ -15,8 +15,7 @@ function Navbar() {
         <>
             <NavContainer>
                 <div className='marca'>
-                    <img src={logo} className="logoimage"/>
-                    <h2>Vive la<span> Naturaleza</span></h2>
+                    <img src={logo} className="logo-image"/>
                 </div>
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     <Link  to="/">Inicio</Link>
@@ -37,16 +36,15 @@ export default Navbar
 
 const NavContainer = styled.nav`
   h2{
-    color: #bf930d;
+    color: #FBF1E3;
     font-weight: 400;
     span{
     font-weight: bold;
     }
   }
-  padding: .4rem;
-  background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,5,1,1) 100%);
-background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%, #37605d 37.5%, #1f5959 50%, #005156 62.5%, #004a54 75%, #004453 87.5%, #003d52 100%);
+  padding: .2.5rem;
+  background: #FBF1E3;
+
 
  display: flex;
   align-items: center;
@@ -74,7 +72,7 @@ background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%,
       position: initial;
       margin: 0;
       a{
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: #997619;
         display: inline;
         font-family: 'Fira Sans Condensed', sans-serif;
@@ -109,12 +107,12 @@ background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%,
 
 const BgDiv = styled.div`
 
-    background: rgb(34,193,195);
+    background: #4C8055;
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,5,1,1) 100%);
     background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%, #37605d 37.5%, #1f5959 50%, #005156 62.5%, #004a54 75%, #004453 87.5%, #003d52 100%);
   
   
-  position: absolute;
+  position: fixed;
   top: -1000px;
   left: -1000px;
   width: 100%;

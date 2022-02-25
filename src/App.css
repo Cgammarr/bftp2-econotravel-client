@@ -4,16 +4,16 @@
   width: auto;
 }
 body {
+  font-family: "Quicksand", sans-serif;
+  weight: 100%;
   padding: 0;
   margin: 0;
-
-  /*background-size: 100% 100%;*/
   height: auto;
-
+}
   /*background-image: linear-gradient(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%);/
   text-align: center;*/
 
-}
+
 
 
 code {
@@ -24,81 +24,19 @@ code {
   color: #bf930d;
   margin-top: 1rem;
   padding: 1rem;
-  background-image: linear-gradient(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%);
+  background-color: #4C8055;
   bottom: 0;
   left: 0;
   width: 100%;
 }
 
-h3{
-  font-size: 60px;
-  font-family: Nickainley;
-  color: white;
 
-}
-h1 {
-  font-size: 80px;
-  font-family: Bodoni FLF;
-  color: #c39717;
-
-}
-
-.logoimage {
-  width: 100px;
-
-}
-.logoimage:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);
-}
 
 .marca {
-  font-family: "Nickainley";
-  font-weight: bold;
-  display: flex;
-  width: 35px;
-}
-.contenido{
-  padding: 20px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 100%;
+  align-items: center;
+  margin-left: 40px;
 }
 
-.experience-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgb(255, 255, 255);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+.logo-image{
+width: 120px;
 }
-
-.price {
-  color: grey;
-  font-size: 22px;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
-
