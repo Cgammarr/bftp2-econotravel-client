@@ -9,6 +9,7 @@ import NewExperienceForm from "./componentes/NewExperienceForm";
 import Experiences from "./componentes/Experiences";
 import SobreNosotras from "./componentes/SobreNosotras";
 
+
 function App() {
 
     const [experiences, setExperiences] = useState([]);
@@ -24,10 +25,6 @@ function App() {
                 .then(_ => setRequiresUpdate(false));
         }
     }, [requiresUpdate])
-
-
-
-
 
 
 

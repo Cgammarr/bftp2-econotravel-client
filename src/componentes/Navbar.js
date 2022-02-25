@@ -1,8 +1,8 @@
- import React, {useState} from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
 import logo from './assets/Logo.png'
- import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Navbar() {
 
@@ -33,6 +33,7 @@ function Navbar() {
 }
 
 export default Navbar
+
 
 const NavContainer = styled.nav`
   h2{
@@ -129,4 +130,3 @@ const BgDiv = styled.div`
     }
     
     `
-

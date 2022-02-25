@@ -1,3 +1,4 @@
+
 .App {
   text-align: -moz-center;
   height: 1250px;
@@ -10,8 +11,8 @@ body {
   margin: 0;
   height: auto;
 }
-  /*background-image: linear-gradient(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%);/
-  text-align: center;*/
+/*background-image: linear-gradient(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%);/
+text-align: center;*/
 
 
 
@@ -38,5 +39,5 @@ code {
 }
 
 .logo-image{
-width: 120px;
+  width: 120px;
 }
